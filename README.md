@@ -8,15 +8,20 @@ Packages required: "DESeq2", "clusterProfiler", "enrichplot", "org.Hs.eg.db", "R
 
 Libraries and Data loading: lines 1-37 
 - Load the 3 files from the dataset
+  
 Data preprocessing: lines 39-90.
 - Patient ID formatting and sort order of patients the same throughout 3 files
+  
 Statistical analysis for identifying differentially expressed genes: lines 91-116
 - run DESeq analysis on data & identify 10 most differentially expressed genes based on fold change
+  
 Over and under expressed genes pathway enrichment analyses: lines 121-230
 - Seperate genes for over and under expression and run enrichGo, enrichKEGG, enrichPathway and pairwise_termsim.
 - Plot dotplots for each analysis
+  
 Variance stabilised gene expressions visualisation: lines 234-253
-- get vst values and plot PCA plot and heatmap 
+- get vst values and plot PCA plot and heatmap
+   
 Survival model: lines 255-290.
 - calculate survival, run cross-validation on fitted Lasso Cox Model
 - print sorted genes based on descending coefficent attributed 
